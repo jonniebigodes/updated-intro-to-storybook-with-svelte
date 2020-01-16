@@ -71,8 +71,8 @@
 
 <div>
   <PureTaskList
-    tasks="{$taskStore}"
-    on:onPinTask="{onPinTask}"
-    on:onArchiveTask="{onArchiveTask}"
+    tasks={$taskStore}
+    on:onPinTask={onPinTask}
+    on:onArchiveTask={onArchiveTask}
   />
 </div>
