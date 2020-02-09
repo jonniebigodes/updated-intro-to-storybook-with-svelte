@@ -4,6 +4,7 @@ module.exports = {
     "@storybook/addon-actions",
     "@storybook/addon-links",
     "@storybook/addon-knobs",
-    require.resolve('./addons/register.js')
+    //require.resolve('./addons/example-addon.js')
+    './.storybook/addons/register.js'
   ]
 };

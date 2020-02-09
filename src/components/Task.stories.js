@@ -1,29 +1,32 @@
-import Task from './Task.svelte';
+import Task from "./Task.svelte";
 import { action } from "@storybook/addon-actions";
-import { withKnobs, object } from '@storybook/addon-knobs';
+import { withKnobs, object } from "@storybook/addon-knobs";
 export default {
-  title: 'Task',
+  title: "Task",
   excludeStories: /.*Data$/,
   decorators: [withKnobs],
   parameters: {
     assets: [
-      'path/to/your/asset.png',
+      /*  'path/to/your/asset.png',
       'path/to/another/asset.png',
-      'path/to/yet/another/asset.png',
-    ],
-  },
+      'path/to/yet/another/asset.png', */
+      "./image_1.jpg",
+      "./image_2.jpg",
+      "./image_3.jpg"
+    ]
+  }
 };
 
 export const actionsData = {
-  onPinTask: action('onPinTask'),
-  onArchiveTask: action('onArchiveTask'),
+  onPinTask: action("onPinTask"),
+  onArchiveTask: action("onArchiveTask")
 };
 
 export const taskData = {
-  id: '1',
-  title: 'Test Task',
-  state: 'Task_INBOX',
-  updated_at: new Date(2019, 0, 1, 9, 0),
+  id: "1",
+  title: "Test Task",
+  state: "Task_INBOX",
+  updated_at: new Date(2019, 0, 1, 9, 0)
 };
 /* 
 // default task state
